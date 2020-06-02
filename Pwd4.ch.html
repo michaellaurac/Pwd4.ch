@@ -1907,76 +1907,77 @@
 			</script>
 				
 			<script>
-	// Set the date we're counting down to
-	var countDownDay = new Date("Jun 2, 2020 23:59:59").getTime();
-	var countDownWeek = new Date("Jun 6, 2020 23:59:59").getTime();
-	var countDownWeekx = new Date("Jun 2, 2020 23:59:59").getTime();
-	var countDownMonth = new Date("Jul 1, 2020 00:00:00").getTime();
-	var countDownMonths = new Date("Jun 14, 2020 23:59:59").getTime();
+				// Set the date we're counting down to
+				var countDownDay 	= new Date("Jun 2, 2020 23:59:59").getTime();
+				var countDownWeek 	= new Date("Jun 6, 2020 23:59:59").getTime();
+				var countDownWeekx 	= new Date("Jun 2, 2020 23:59:59").getTime();
+				var countDownMonth 	= new Date("Jul 1, 2020 00:00:00").getTime();
+				var countDownMonths = new Date("Jun 14, 2020 23:59:59").getTime();
 
-	// Update the count down every 1 second
-		var x = setInterval(function() {
+				// Update the count down every 1 second
+				var x = setInterval(function() {
 
-	    // Get todays date and time
-	    var now = new Date().getTime();
-	    
-	    // Find the distance between now and the count down date
-	    var Ddistance = countDownDay - now;
-	    var Wdistance = countDownWeek - now;
-		var Xdistance = countDownWeekx - now;
-		var Mdistance = countDownMonth - now;
-		var Ndistance = countDownMonths - now;
-		
-	    // Time calculations for days, hours, minutes and seconds
-	    var Dhours = Math.floor((Ddistance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-	    var Dminutes = Math.floor((Ddistance % (1000 * 60 * 60)) / (1000 * 60));
-	    var Dseconds = Math.floor((Ddistance % (1000 * 60)) / 1000);
-	    var Wdays = Math.floor(Wdistance / (1000 * 60 * 60 * 24));
-	    var Whours = Math.floor((Wdistance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-	    var Wminutes = Math.floor((Wdistance % (1000 * 60 * 60)) / (1000 * 60));
-	    var Wseconds = Math.floor((Wdistance % (1000 * 60)) / 1000);
-	    var Xdays = Math.floor(Xdistance / (1000 * 60 * 60 * 24));
-	    var Xhours = Math.floor((Xdistance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-	    var Xminutes = Math.floor((Xdistance % (1000 * 60 * 60)) / (1000 * 60));
-	    var Xseconds = Math.floor((Xdistance % (1000 * 60)) / 1000);
-	    var Mdays = Math.floor(Mdistance / (1000 * 60 * 60 * 24));
-	    var Mhours = Math.floor((Mdistance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-	    var Mminutes = Math.floor((Mdistance % (1000 * 60 * 60)) / (1000 * 60));
-	    var Mseconds = Math.floor((Mdistance % (1000 * 60)) / 1000);
-	    var Ndays = Math.floor(Ndistance / (1000 * 60 * 60 * 24));
-	    var Nhours = Math.floor((Ndistance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-	    var Nminutes = Math.floor((Ndistance % (1000 * 60 * 60)) / (1000 * 60));
-	    var Nseconds = Math.floor((Ndistance % (1000 * 60)) / 1000); 
-	    
-		// Output the result in an element with id="demo"
-	    document.getElementById("countday").innerHTML =                                           Dhours + "h " + Dminutes + "m " + Dseconds + "s ";
-	    document.getElementById("countweek").innerHTML =   Wdays + "j " + Whours + "h " + Wminutes + "m " + Wseconds + "s ";
-		document.getElementById("countweeks").innerHTML =  Xdays + "j " + Xhours + "h " + Xminutes + "m " + Xseconds + "s ";
-		document.getElementById("countmonth").innerHTML =  Mdays + "j " + Mhours + "h " + Mminutes + "m " + Mseconds + "s ";
-		document.getElementById("countmonths").innerHTML = Ndays + "j " + Nhours + "h " + Nminutes + "m " + Nseconds + "s ";
+				    // Get todays date and time
+				    var now = new Date().getTime();
+				    
+				    // Find the distance between now and the count down date
+				    var Ddistance = countDownDay 	- now;
+				    var Wdistance = countDownWeek 	- now;
+					var Xdistance = countDownWeekx 	- now;
+					var Mdistance = countDownMonth 	- now;
+					var Ndistance = countDownMonths - now;
+					
+				    // Time calculations for days, hours, minutes and seconds
+				    var Dhours = Math.floor((Ddistance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				    var Dminutes = Math.floor((Ddistance % (1000 * 60 * 60)) / (1000 * 60));
+				    var Dseconds = Math.floor((Ddistance % (1000 * 60)) / 1000);
+				    var Wdays = Math.floor(Wdistance / (1000 * 60 * 60 * 24));
+				    var Whours = Math.floor((Wdistance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				    var Wminutes = Math.floor((Wdistance % (1000 * 60 * 60)) / (1000 * 60));
+				    var Wseconds = Math.floor((Wdistance % (1000 * 60)) / 1000);
+				    var Xdays = Math.floor(Xdistance / (1000 * 60 * 60 * 24));
+				    var Xhours = Math.floor((Xdistance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				    var Xminutes = Math.floor((Xdistance % (1000 * 60 * 60)) / (1000 * 60));
+				    var Xseconds = Math.floor((Xdistance % (1000 * 60)) / 1000);
+				    var Mdays = Math.floor(Mdistance / (1000 * 60 * 60 * 24));
+				    var Mhours = Math.floor((Mdistance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				    var Mminutes = Math.floor((Mdistance % (1000 * 60 * 60)) / (1000 * 60));
+				    var Mseconds = Math.floor((Mdistance % (1000 * 60)) / 1000);
+				    var Ndays = Math.floor(Ndistance / (1000 * 60 * 60 * 24));
+				    var Nhours = Math.floor((Ndistance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				    var Nminutes = Math.floor((Ndistance % (1000 * 60 * 60)) / (1000 * 60));
+				    var Nseconds = Math.floor((Ndistance % (1000 * 60)) / 1000); 
+				    
+					// Output the result in an element with id="demo"
+				    document.getElementById("countday").innerHTML 		= 				 Dhours + "h " + Dminutes + "m " + Dseconds + "s ";
+				    document.getElementById("countweek").innerHTML 		= Wdays + "j " + Whours + "h " + Wminutes + "m " + Wseconds + "s ";
+					document.getElementById("countweeks").innerHTML 	= Xdays + "j " + Xhours + "h " + Xminutes + "m " + Xseconds + "s ";
+					document.getElementById("countmonth").innerHTML 	= Mdays + "j " + Mhours + "h " + Mminutes + "m " + Mseconds + "s ";
+					document.getElementById("countmonths").innerHTML 	= Ndays + "j " + Nhours + "h " + Nminutes + "m " + Nseconds + "s ";
 
-	    // If the count down is over, write some text 
-	    if (Ddistance < 0) {
-		// clearInterval(x);
-	        document.getElementById("countday").innerHTML = "Périmé";
-	    }
-		if (Wdistance < 0) {
-		// clearInterval(x);
-	        document.getElementById("countweek").innerHTML = "Périmé";
-	    }
-		if (Xdistance < 0) {
-		// clearInterval(x);
-	        document.getElementById("countweeks").innerHTML = "Périmé";
-	    }
-		if (Mdistance < 0) {
-		// clearInterval(x);
-	        document.getElementById("countmonth").innerHTML = "Périmé";
-	    }
-		if (Ndistance < 0) {
-		// clearInterval(x);
-	        document.getElementById("countmonths").innerHTML = "Périmé";
-	    }
-	}, 1000);
+				    // If the count down is over, write some text 
+				    if (Ddistance < 0) {
+						// clearInterval(x);
+				        document.getElementById("countday").innerHTML = "Périmé";
+				    }
+					if (Wdistance < 0) {
+						// clearInterval(x);
+				        document.getElementById("countweek").innerHTML = "Périmé";
+				    }
+					if (Xdistance < 0) {
+						// clearInterval(x);
+				        document.getElementById("countweeks").innerHTML = "Périmé";
+				    }
+					if (Mdistance < 0) {
+						// clearInterval(x);
+				        document.getElementById("countmonth").innerHTML = "Périmé";
+				    }
+					if (Ndistance < 0) {
+						// clearInterval(x);
+						document.getElementById("countmonths").innerHTML = "Périmé";
+					}
+
+				}, 1000);
 			</script>
    
 			<font size="-1">
